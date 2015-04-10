@@ -65,6 +65,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="03-directives\index.html" />
+    <Content Include="08-custom-filters\app.js" />
+    <Content Include="08-custom-filters\index.html" />
+    <Content Include="07-controllers-02\app.js" />
+    <Content Include="07-controllers-02\index.html" />
+    <Content Include="07-controllers-01\app.js" />
+    <Content Include="07-controllers-01\index.html" />
+    <Content Include="06-modules\app.js" />
+    <Content Include="06-modules\index.html" />
+    <Content Include="05-filters\index.html" />
+    <Content Include="04-ng-repeat\index.html" />
+    <Content Include="02-databinding\index.html" />
+    <Content Include="01-setup\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
