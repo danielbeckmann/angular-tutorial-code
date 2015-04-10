@@ -1,0 +1,18 @@
+﻿<form>
+    <input type="text" data-ng-model="search">
+</form>
+
+<table class="table" data-ng-controller="MoviesCtrl as vm">
+    <tr>
+        <th>Poster</th>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Rating</th>
+    </tr>
+    <tr data-ng-repeat="movie in vm.movies | filter: search">
+        <td><img height="100" data-ng-src="{{movie.poster}}" alt="{{movie.title}}" /></td>
+        <td>{{movie.title}}</td>
+        <td>{{movie.year}}</td>
+        <td>{{movie.rating | rating}}</td>
+    </tr>
+</table>

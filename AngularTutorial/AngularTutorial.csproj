@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="09-services\movies.json" />
+    <Content Include="10-custom-service\movies.json" />
+    <Content Include="11-routing\movies.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -66,6 +69,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="03-directives\index.html" />
+    <Content Include="11-routing\app.js" />
+    <Content Include="11-routing\list.html" />
+    <Content Include="11-routing\details.html" />
+    <Content Include="11-routing\index.html" />
+    <Content Include="10-custom-service\app.js" />
+    <Content Include="10-custom-service\index.html" />
+    <Content Include="09-services\app.js" />
+    <Content Include="09-services\index.html" />
     <Content Include="08-custom-filters\app.js" />
     <Content Include="08-custom-filters\index.html" />
     <Content Include="07-controllers-02\app.js" />
