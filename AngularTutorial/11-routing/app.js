@@ -9,7 +9,7 @@
             $routeProvider.
                 when('/', {
                     templateUrl: 'list.html',
-                    controller: 'MoviesCtrl',
+                    controller: 'MovieCtrl',
                     controllerAs: 'vm'
                 }).
                 when('/about', {
@@ -21,7 +21,7 @@
         }
     ]);
 
-    app.controller('MoviesCtrl', ['movieService',
+    app.controller('MovieCtrl', ['movieService',
         function (movieService) {
             var vm = this;
             vm.movies = [];

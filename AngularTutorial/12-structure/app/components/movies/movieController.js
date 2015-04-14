@@ -3,7 +3,7 @@
 
     var app = angular.module('moviesApp');
 
-    app.controller('MoviesCtrl', ['movieService',
+    app.controller('MovieCtrl', ['movieService',
         function (movieService) {
             var vm = this;
             vm.movies = [];

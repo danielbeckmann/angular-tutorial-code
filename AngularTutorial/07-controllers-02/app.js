@@ -3,7 +3,7 @@
 
     var app = angular.module('moviesApp', []);
 
-    app.controller('MoviesCtrl', function () {
+    app.controller('MovieCtrl', function () {
         this.movies = [
             { id: 1, title: 'Furious 7', year: 2015, rating: 4, poster: 'http://image.tmdb.org/t/p/original/dCgm7efXDmiABSdWDHBDBx2jwmn.jpg' },
             { id: 2, title: 'Big Hero 6', year: 2014, rating: 2, poster: 'http://image.tmdb.org/t/p/original/3zQvuSAUdC3mrx9vnSEpkFX0968.jpg' },

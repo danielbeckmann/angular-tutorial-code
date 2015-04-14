@@ -9,7 +9,7 @@
             $routeProvider.
                 when('/', {
                     templateUrl: 'app/components/movies/list.html',
-                    controller: 'MoviesCtrl',
+                    controller: 'MovieCtrl',
                     controllerAs: 'vm'
                 }).
                 when('/about', {

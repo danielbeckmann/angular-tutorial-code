@@ -11,7 +11,7 @@
             <input type="text" data-ng-model="search">
         </form>
 
-        <ul data-ng-controller="MoviesCtrl as vm">
+        <ul data-ng-controller="MovieCtrl as vm">
             <li data-ng-repeat="movie in vm.movies | filter: search">
                 {{movie}}
             </li>
