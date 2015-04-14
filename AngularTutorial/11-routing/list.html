@@ -16,8 +16,8 @@
         <td>{{movie.year}}</td>
         <td>{{movie.rating | rating}}</td>
         <td>
-            <button class="btn btn-default btn-xs" ng-class="{favorite: movie.isFavorite}" type="button" ng-click="vm.toggleFavorite(movie)">
-                <span aria-hidden="true" class="glyphicon glyphicon-heart" ng-class="{favorite: movie.isFavorite}"></span> Favorite
+            <button type="button" class="btn btn-default btn-xs" data-ng-class="{favorite: movie.isFavorite}" data-ng-click="vm.toggleFavorite(movie)">
+                <span class="glyphicon glyphicon-heart" data-ng-class="{favorite: movie.isFavorite}"></span> Favorite
             </button>
         </td>
     </tr>

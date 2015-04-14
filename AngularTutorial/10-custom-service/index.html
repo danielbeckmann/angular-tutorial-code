@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html data-ng-app="moviesApp">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>AngularJS Tutorial</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <style type="text/css">
         .favorite {
-           color:#d9534f !important;
+            color: #d9534f !important;
         }
     </style>
 </head>
@@ -30,8 +30,8 @@
                 <td>{{movie.year}}</td>
                 <td>{{movie.rating | rating}}</td>
                 <td>
-                    <button class="btn btn-default btn-xs" ng-class="{favorite: movie.isFavorite}" type="button" ng-click="vm.toggleFavorite(movie)">
-                        <span aria-hidden="true" class="glyphicon glyphicon-heart" ng-class="{favorite: movie.isFavorite}"></span> Favorite
+                    <button type="button" class="btn btn-default btn-xs" data-ng-class="{favorite: movie.isFavorite}" data-ng-click="vm.toggleFavorite(movie)">
+                        <span class="glyphicon glyphicon-heart" data-ng-class="{favorite: movie.isFavorite}"></span> Favorite
                     </button>
                 </td>
             </tr>
