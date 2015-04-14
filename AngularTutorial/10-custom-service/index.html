@@ -4,6 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>AngularJS Tutorial</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style type="text/css">
+        .favorite {
+           color:#d9534f !important;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -17,12 +22,18 @@
                 <th>Title</th>
                 <th>Year</th>
                 <th>Rating</th>
+                <td></td>
             </tr>
             <tr data-ng-repeat="movie in vm.movies | filter: search">
                 <td><img height="100" data-ng-src="{{movie.poster}}" alt="{{movie.title}}" /></td>
                 <td>{{movie.title}}</td>
                 <td>{{movie.year}}</td>
                 <td>{{movie.rating | rating}}</td>
+                <td>
+                    <button class="btn btn-default btn-xs" ng-class="{favorite: movie.isFavorite}" type="button" ng-click="vm.toggleFavorite(movie)">
+                        <span aria-hidden="true" class="glyphicon glyphicon-heart" ng-class="{favorite: movie.isFavorite}"></span> Favorite
+                    </button>
+                </td>
             </tr>
         </table>
     </div>

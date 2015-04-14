@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    var app = angular.module('moviesApp', []);
+    var app = angular.module('moviesApp');
 
     app.controller('MoviesCtrl', ['movieService',
         function (movieService) {
@@ -36,39 +36,5 @@
                 // Toggle attribute
                 item.isFavorite = !item.isFavorite;
             };
-    }]);
-
-    app.factory('movieService', ['$http',
-        function ($http) {
-            var serviceUrl = 'movies.json';
-
-            var getPopular = function () {
-                return $http.get(serviceUrl);
-            };
-
-            var getFavorites = function () {
-                return JSON.parse(localStorage.getItem('favorites')) || [];
-            };
-
-            var setFavorites = function (favorites) {
-                localStorage.setItem('favorites', JSON.stringify(favorites));
-            };
-
-            return {
-                getPopular: getPopular,
-                getFavorites: getFavorites,
-                setFavorites: setFavorites
-            };
-    }]);
-
-    app.filter('rating', function () {
-        return function (rating) {
-            var output = '';
-
-            for (var i = 0; i < rating; i++) output += '\u2605';
-            for (var j = rating; j < 5; j++) output += '\u2606';
-
-            return output;
-        };
-    });
+        }]);
 }());

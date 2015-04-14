@@ -59,7 +59,18 @@
   <ItemGroup>
     <Content Include="09-services\movies.json" />
     <Content Include="10-custom-service\movies.json" />
+    <Content Include="12-structure\app\app.js" />
+    <Content Include="12-structure\app\common\filters.js" />
+    <Content Include="12-structure\app\components\movies\movieController.js" />
+    <Content Include="12-structure\app\components\movies\movieService.js" />
+    <Content Include="12-structure\app\config\routes.js" />
+    <Content Include="12-structure\index.html" />
+    <Content Include="12-structure\app\components\infos\infos.html" />
+    <Content Include="12-structure\app\components\movies\list.html" />
+    <Content Include="11-routing\infos.html" />
+    <Content Include="11-routing\list.html" />
     <Content Include="11-routing\movies.json" />
+    <Content Include="12-structure\app\components\movies\movies.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -69,10 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="03-directives\index.html" />
-    <Content Include="11-routing\app.js" />
-    <Content Include="11-routing\list.html" />
-    <Content Include="11-routing\details.html" />
-    <Content Include="11-routing\index.html" />
     <Content Include="10-custom-service\app.js" />
     <Content Include="10-custom-service\index.html" />
     <Content Include="09-services\app.js" />
@@ -89,11 +96,14 @@
     <Content Include="04-ng-repeat\index.html" />
     <Content Include="02-databinding\index.html" />
     <Content Include="01-setup\index.html" />
+    <Content Include="11-routing\app.js" />
+    <Content Include="11-routing\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
